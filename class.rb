@@ -12,6 +12,15 @@ end
 drink1 = Drink1.new
 puts drink1.name
 
+class Drink2 
+    def order(name)
+        puts "#{name}をください"
+    end
+end
+drink = Drink.new
+drink.order("カフェラテ")
+
+
 module WhippedCream
     def whipped_cream
         @name += "ホイップクリーム"
@@ -29,3 +38,5 @@ end
 drink = Drink.new("モカ")
 drink.whipped_cream
 puts drink.name
+
+
